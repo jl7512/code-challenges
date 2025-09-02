@@ -18,12 +18,6 @@ export function Xbonacci(signature, n) {
     let index = 0;
     for (let i = result.length; i < n; i++) {
       const value = nextValue(index, result);
-
-      // let value = 0;
-      // for (index; index < result.length; index++) {
-      //   value += result[index];
-      // }
-
       result.push(value);
       index++;
     }
