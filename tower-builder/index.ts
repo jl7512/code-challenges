@@ -13,7 +13,7 @@ export const towerBuilder = (nFloors: number): string[] => {
   for(let i = 0; i < amountOfStars.length; i++) {
     const stars = amountOfStars[i];
 
-    // get the total number of characters in a string by getting the last row
+    // Get the total number of characters in a string by getting the last row
     const totalChars = amountOfStars[amountOfStars.length - 1];    
     const spaces = Math.floor((totalChars - stars) / 2)
     const floor = ' '.repeat(spaces) + '*'.repeat(stars) + ' '.repeat(spaces);
